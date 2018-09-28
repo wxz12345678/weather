@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/rem.js">
+        document.addEventListener('plusready', function(){
+            //console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+        });
+    </script>
+</head>
+<body>
+   <content class="content">
+        <ul class="heade">
+            <li></li>
+            <li>北京市 海淀区</li>
+            <li></li>
+        </ul>
+        <div class="tip">
+            <p class="tip-text">空气</p>
+            <p class="qulity">质量好</p>
+        </div>
+        <p class="temperature">26</p>
+        <p class="dayweather">多云</p>
+        <p class="humidity">湿度 45%</p>
+        <p class="feeldes">现在的温度比较舒适</p>
+    </content>
+   <div class="bott1">
+           <div class="left">
+               <div class="leftl">
+                   <p>今天</p>
+                   <div class="high-low">
+                       <p class="low">12</p>
+                       <span>/</span>
+                       <p class="high">2</p>
+                   </div>
+               </div>
+               <div class="leftr">
+                   <p>晴转多云</p>
+                   <img src="" alt="">
+               </div>
+           </div>
+            <div class="right">
+                <div class="leftl">
+                    <p>明天</p>
+                    <div class="high-low">
+                        <p class="low">12</p>
+                        <span>/</span>
+                        <p class="high">2</p>
+                    </div>
+                </div>
+                <div class="leftr">
+                    <p class="tomorrow-weather">晴转多云</p>
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+   <div class="bott2">
+       <ul class="bott2-list"></ul>
+   </div>
+   <div class="bott3">
+       <ul></ul>
+   </div>
+   <div class="bott4">
+            <a href="#" class="more">
+                <img src="img/7.png" alt="">
+                <p>不带伞</p>
+                <p>雨伞</p>
+            </a>
+            <a href="#" class="more">
+                <img src="img/9.png" alt="">
+                <p>不带伞</p>
+                <p>雨伞</p>
+            </a>
+            <a href="#" class="more">
+                <img src="img/2.png" alt="">
+                <p>不带伞</p>
+                <p>雨伞</p>
+            </a>
+            <a href="#" class="more">
+                <img src="img/7.png" alt="">
+                <p>不带伞</p>
+                <p>雨伞</p>
+            </a>
+            <a href="#" class="more">
+                <img src="img/6.png" alt="">
+                <p>不带伞</p>
+                <p>雨伞</p>
+            </a>
+            <a href="#" class="more">
+                <img src="img/4.png" alt="">
+                <p>不带伞</p>
+                <p>雨伞</p>
+            </a>
+            <a href="#" class="more">
+                <img src="img/13.png" alt="">
+                <p>不带伞</p>
+                <p>雨伞</p>
+            </a>
+            <a href="#" class="more">
+                <img src="img/14.png" alt="">
+                <p>不带伞</p>
+                <p>雨伞</p>
+            </a>
+        </div>
+   <p class="footer">数据来源于中国数据网</p>
+<!--city开始-->
+   <section>
+       <header>
+           <input type="text" placeholder="搜索市区县等">
+           <p>取消</p>
+       </header>
+       <div class="hot-city">
+           <p class="city-title">当前定位</p>
+           <ul class="city-list">
+               <li class="city-list-li">太原</li>
+           </ul>
+       </div>
+   </section>
+<!--city结束-->
+</body>
+</html>
+<script>
+    //点击地址，city出现，其余消失
+    $('.heade li:nth-child(2)').click(function () {
+        $('section').css({'display':'block'});
+        $('.content').css({'display':'none'});
+        $('.bott1').css({'display':'none'});
+        $('.bott2').css({'display':'none'});
+        $('.bott3').css({'display':'none'});
+        $('.bott4').css({'display':'none'});
+        $('.footer').css({'display':'none'});
+    })
+    //点击取消，city消失，其他出现
+    $('header>p').click(function () {
+        $('section').css({'display':'none'});
+        $('.content').css({'display':'block'});
+        $('.bott1').css({'display':'block'});
+        $('.bott2').css({'display':'block'});
+        $('.bott3').css({'display':'block'});
+        $('.bott4').css({'display':'block'});
+        $('.footer').css({'display':'block'});
+    })
+</script>

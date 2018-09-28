@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #f5f5f5;
+}
+/*头部开始*/
+content{
+    display: block;
+    width: 100%;
+    height: 9.4rem;
+    background:url("../img/screen.png") no-repeat center bottom,-webkit-linear-gradient(top,#313978,#5893bb);
+    background-size: contain;
+}
+.heade{
+    width: 100%;
+    height: 0.64rem;
+    display: flex;
+    justify-content: space-between;
+}
+.heade li{
+    color: #fff;
+    font-size: 0.32rem;
+    line-height: 0.64rem;
+}
+.tip{
+    width: 1.5rem;
+    height:0.88rem ;
+    background-color:#f1ab62 ;
+    border-radius: 0.2rem;
+    margin-left: 0.24rem;
+}
+.tip .tip-text{
+    text-align: center;
+    font-size:0.22rem ;
+    color: #fff;
+    line-height: 1.5;
+}
+.tip .qulity{
+    text-align: center;
+    font-size:0.24rem ;
+    color: #fff;
+    line-height: 2;
+}
+.temperature{
+    text-align: center;
+    font-size: 1.24rem;
+    height: 1.24rem;
+    margin-top: 1.24rem;
+    line-height: 1.24rem;
+    color: #fff;
+}
+.dayweather{
+    text-align: center;
+    font-size: 0.44rem;
+    height: 0.44rem;
+    line-height: 0.44rem;
+    margin-top: 0.32rem;
+    color: #fff;
+}
+.humidity{
+    text-align: center;
+    font-size: 0.28rem;
+    height: 0.28rem;
+    line-height: 0.28rem;
+    color: #fff;
+    margin-top:0.2rem;
+}
+.feeldes{
+    font-size:0.32rem ;
+    color: #fff;
+    height: 0.32rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 1rem;
+}
+ /*头部结束*/
+ /*今天明天温度开始*/
+ .bott1{
+    width: 100%;
+    height: 2.02rem;
+    background: #fff;
+    box-shadow: 0 0.01rem 0.02rem rgba(0,0,0,0.4);
+    padding: 0.58rem 0.42rem;
+}
+ .bott1 .left{
+    width: 50%;
+    height: 100%;
+    font-size: 0.22rem;
+    border-right: 1px solid #E0E0E0;
+    padding-right: 0.42rem;
+    float: left;
+}
+.bott1 .leftl{
+    display: flex;
+    justify-content: space-between;
+}
+.bott1 .leftl .high-low{
+    display: flex;
+    justify-content: space-between;
+}
+ .bott1 .leftl p:first-child{
+    margin-bottom:  0.24rem;
+}
+.bott1 .leftr{
+    display: flex;
+    justify-content: space-between;
+}
+.bott1 .leftr .high-low{
+    display: flex;
+    justify-content: space-between;
+}
+ .bott1 .leftr p{
+    margin-bottom:  0.24rem;
+}
+ .bott1 .leftr img{
+    width: 0.38rem;
+    height: 0.38rem;
+     /*background-image: url("../img/0.png");*/
+     /*background-position: center;*/
+}
+ .bott1 .right{
+    width: 50%;
+    height: 100%;
+    font-size: 0.22rem;
+    padding-left: 0.42rem;
+    float: right;
+}
+ .bott1 .right .leftl{
+    display: flex;
+    justify-content: space-between;
+}
+ .bott1 .right .leftl p:first-child{
+    margin-bottom:  0.24rem;
+}
+ .bott1 .right .leftr{
+    display: flex;
+    justify-content: space-between;
+}
+ .bott1 .right .leftr p{
+    margin-bottom:  0.24rem;
+}
+
+/*今天明天温度结束*/
+/*一天内温度变化开始*/
+ .bott2{
+    margin-top: 0.22rem;
+    width: 100%;
+    height: 2.68rem;
+    background: #fff;
+    box-shadow: 0 0.01rem 0.02rem rgba(0,0,0,0.4);
+    overflow: auto;
+    padding: 0.61rem 0.4rem;
+}
+ .bott2 ul{
+    display: flex;
+     height: 100%;
+}
+ .bott2 ul li{
+    margin-right: 0.8rem;
+     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     float: left;
+}
+ .bott2 ul li p{
+    font-size: 0.22rem;
+}
+ .bott2 ul li  img{
+    width: 0.38rem;
+    height: 0.38rem;
+     /*background: url("../img/0.png");*/
+     /*background-position: center;*/
+    margin: 0.24rem 0;
+}
+/*一天内温度变化结束*/
+ .bott3{
+    width: 100%;
+    height: 7.75rem;
+    margin-top: 0.22rem;
+    background: #fff;
+    box-shadow: 0 0.01rem 0.02rem rgba(0,0,0,0.4);
+    padding: 0.49rem 0.42rem;
+    overflow: auto;
+
+}
+ .bott3 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+ .bott3 ul li{
+   margin-right: 0.74rem;
+}
+ .bott3 ul li p{
+    font-size: 0.22rem;
+}
+ .bott3 ul li img{
+    width: 0.38rem;
+    height: 0.38rem;
+    margin: auto;
+}
+ .bott3 ul li div{
+    width: 100%;
+    height: 0.54rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+ .bott3 ul li div > p{
+    white-space: nowrap;
+}
+ .bott3 ul li>p{
+    margin: 0.28rem 0 0.38rem 0;
+    text-align: center;
+}
+
+.bott3 ul li div img{
+    width: 0.38rem;
+    height: 0.38rem;
+}
+.bott4{
+    width: 100%;
+    height: 3.74rem;
+    border-top: 1px solid #E0E0E0;
+    background: #fff;
+    margin-top: 0.22rem;
+
+
+}
+.bott4 .more{
+    display: block;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-right: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 0.36rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+}
+.bott4 .more:nth-child(4n){
+    border-right:0;
+}
+.bott4 .more img{
+    width: 0.38rem;
+    height: 0.38rem;
+}
+.bott4 .more p{
+    font-size: 0.22rem;
+    color: #000;
+}
+.bott4 .more p:last-child{
+    color: rgba(0,0,0,0.6);
+}
+.footer{
+    margin: 0.26rem 0;
+    font-size: 0.22rem;
+    text-align: center;
+    color: rgba(0,0,0,0.5);
+}
+
+section{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display:none;
+}
+header{
+    width: 100%;
+    height: 1.3rem;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 0.24rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header input{
+    display: block;
+    width: 6.3rem;
+    height: 0.7rem;
+    background-color: #f2f2f2;
+    border-radius: 0.5rem;
+    color: #848484;
+    font-size: 0.18rem;
+    line-height: 0.7rem;
+    text-indent: 0.4rem;
+    outline:none;
+    border: none;
+}
+header>p{
+    font-size: 0.18rem;
+    color: #848484;
+    cursor: pointer;
+}
+section .city-title{
+    width: 100%;
+    height: 1rem;
+    color: #848484;
+    font-size:0.20rem;
+    padding: 0.24rem 0.24rem 0 0.24rem;
+    line-height: 0.52rem;
+    margin-top:0.24rem ;
+    float: left;
+}
+.hot-city{
+    width: 100%;
+    height: 13.34rem;
+    overflow: auto;
+    padding:0 0.24rem 0 0.24rem;
+}
+section .city-list{
+    padding:0 0.24rem 0 0.24rem;
+}
+section .city-list-li{
+    background-color: #f2f2f2;
+    width: 2.34rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    color: #848484;
+    font-size: 0.18rem;
+    border-radius: 0.5rem;
+    float: left;
+    margin-bottom: 0.24rem;
+}
